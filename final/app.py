@@ -65,3 +65,4 @@ if st.button('predict'):
     else:
         st.header("Not Spam")
 
+st.header("Made by Lakshit Sachdeva")
