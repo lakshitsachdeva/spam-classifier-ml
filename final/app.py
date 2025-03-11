@@ -1,6 +1,10 @@
 import subprocess
 import sys
 import nltk
+
+nltk.download('punkt', force=True)
+nltk.download('stopwords', force=True)
+
 import pickle
 import string
 import streamlit as st
