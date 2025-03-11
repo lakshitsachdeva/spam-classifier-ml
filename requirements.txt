@@ -1,1 +1,7 @@
+streamlit
 nltk
+click
+joblib
+regex
+tqdm
+colorama
