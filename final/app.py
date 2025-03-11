@@ -7,6 +7,10 @@ try:
 except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "nltk"])
     import nltk
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
 import streamlit as st
 import pickle
