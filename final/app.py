@@ -13,8 +13,6 @@ except LookupError:
     nltk.download('punkt')
 
 import shutil
-shutil.rmtree('/home/adminuser/nltk_data', ignore_errors=True)
-nltk.download('punkt', download_dir='/home/adminuser/nltk_data')
 
 import streamlit as st
 import pickle
