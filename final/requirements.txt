@@ -5,3 +5,4 @@ joblib
 regex
 tqdm
 colorama
+sklearn
