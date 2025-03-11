@@ -2,7 +2,7 @@ import subprocess
 import sys
 import nltk
 
-nltk.download('punkt', force=True)
+nltk.download('punkt_tab')
 nltk.download('stopwords', force=True)
 
 import pickle
@@ -15,11 +15,11 @@ from nltk.stem.porter import PorterStemmer
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
-    nltk.download('punkt')
+    nltk.download('punkt_tab')
 
 try:
     nltk.data.find('corpora/stopwords')
-except LookupError:
+except LookupError: 
     nltk.download('stopwords')
 
 # 🔹 Initialize Porter Stemmer
